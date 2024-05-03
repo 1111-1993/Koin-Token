@@ -46,7 +46,7 @@ function generateAddresses() {
     writeStream.end();
 
     writeStream.on('finish', () => {
-        console.log('Addresses and private keys saved to EVM_addresses.json');
+        console.log('Addresses saved to EVM_addresses.json');
     });
 
     writeStream.on('error', (err) => {
