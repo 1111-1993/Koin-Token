@@ -2,7 +2,7 @@ const fs = require('fs');
 const { ethers } = require('ethers');
 
 async function sendRandomTokens() {
-    // Replace the following with your provider URL, such as Infura, Alchemy, or your own Ethereum node.
+    // Replace the following with your provider URL, such as Infura, Alchemy.
     const provider = new ethers.providers.JsonRpcProvider('https://eth-sepolia.g.alchemy.com/v2/G2UYE7QBZx0KMBYCuFYxlinanDSQsEFt');
     
     // Replace this with your sender wallet's private key or mnemonic.
@@ -15,7 +15,7 @@ async function sendRandomTokens() {
     const addresses = JSON.parse(fs.readFileSync('EVM_addresses.json'));
     
     // Define the token contract address and ABI.
-    const tokenContractAddress = '0x3952FF3C991E2e0e18a969667312C6ea3Cc52B6b';
+    const tokenContractAddress = '0xD428400908042f2ef721C14150F645B76ffaac1a';
     const tokenContractAbi = [
         // Add the ABI of the token contract here.
         // Minimal ABI needed for token transfers:
