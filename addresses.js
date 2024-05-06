@@ -2,7 +2,7 @@ const fs = require('fs');
 const { ethers } = require("ethers");
 
 function generateAddresses() {
-    const seedPhrase = "rough usage crop recycle curious verify wide veteran degree acquire maid manual"; // Replace with your seed phrase
+    const seedPhrase = "pumpkin future casual pledge mother stand frost ship figure puppy garden busy bright cousin minor guitar maze what brisk proof enrich next arrest ski"; // Replace with your seed phrase
     
     const wallet = ethers.HDNodeWallet.fromPhrase(seedPhrase);
     console.log('Base Wallet Address:', wallet.address);

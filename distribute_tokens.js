@@ -1,5 +1,6 @@
 const fs = require('fs');
 const { ethers } = require('ethers');
+const BN = require('bn.js');
 
 async function sendRandomTokens() {
     // Replace the following with your provider URL, such as Infura, Alchemy.
@@ -29,10 +30,12 @@ async function sendRandomTokens() {
     for (let i = 0; i < addresses.length; i++) {
         const recipientAddress = addresses[i].address;
         const randomAmount = Math.floor(Math.random() * 999) + 1; // Generate a random number between 1 and 999.
+
+        const randomUnits = ethers.utils.parseUnits(randomAmount.toString(), 18);
         
         try {
             // Send the random amount of tokens to the recipient address.
-            const tx = await tokenContract.transfer(recipientAddress, randomAmount);
+            const tx = await tokenContract.transfer(recipientAddress, randomUnits);
             
             // Wait for the transaction to be confirmed.
             await tx.wait();
