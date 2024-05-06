@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { ethers } = require('ethers');
-const BN = require('bn.js');
 
 async function sendRandomTokens() {
     // Replace the following with your provider URL, such as Infura, Alchemy.
