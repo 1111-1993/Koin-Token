@@ -15,7 +15,7 @@ git clone https://github.com/1111-1993/Koin-Token.git
 ```
 
 First,
-Deploy the Smart Contract `Koin.sol` on Remix IDE on Sepolia Testnet. Then
+Deploy the Smart Contract `Koin.sol` on Remix IDE on Sepolia Testnet.
 
 ### Test Script
 1. Script to Generate 10,000 EVM Addresses from a Seed Phrase, run 
@@ -23,7 +23,8 @@ Deploy the Smart Contract `Koin.sol` on Remix IDE on Sepolia Testnet. Then
 ```bash
   npm install
 ```
-Note: Check `ethers` version. It sould be letest(version @6.12.1) for `./addresses.js`, make sure `npm list ethers`  
+Note: Check `ethers` version. It sould be latest (version @6.12.1) for script `./addresses.js`.  
+ 
 
 After running `node addresses.js`file `EVM_addresses.json` will be created.
 
@@ -41,12 +42,14 @@ https://eth-sepolia.g.alchemy.com/v2/API_KEY
 ```bash
 8bdf72fefb57232b6a3624a395fe45a9f246baf877be4a2a0446850176d8fa5e
 ```
+Warning: Never share your Private key !!!
+
 `Token contract address`
 ```bash
 0xD428400908042f2ef721C14150F645B76ffaac1a
 ```
 
-Make sure `ethers` version downgrade to `@5.7.2`
+Make sure `ethers` version is downgraded to `@5.7.2`
 
 ```bash
 npm install ethers@5.7.2
