@@ -39,15 +39,11 @@ For Example:
 https://eth-sepolia.g.alchemy.com/v2/API_KEY
 ```
 `Sender wallet's private key`
-```bash
-8bdf72fefb57232b6a3624a395fe45a9f246baf877be4a2a0446850176d8fa5e
-```
+
 Warning: Never share your Private key !!!
 
 `Token contract address`
-```bash
-0xD428400908042f2ef721C14150F645B76ffaac1a
-```
+
 
 Make sure `ethers` version is downgraded to `@5.7.2`
 
